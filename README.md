@@ -90,3 +90,6 @@ Outputs:
 This project is licensed under the MIT License.
 
 You are free to use, modify, and distribute it under the terms of the MIT License.
+=======
+# eurusd-ml-forecasting
+234c6551a8e68d3840c8da6cb4253f5e4843db96
