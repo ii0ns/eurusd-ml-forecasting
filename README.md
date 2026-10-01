@@ -3,7 +3,7 @@
 Supervised ML pipeline to forecast the EUR/USD exchange rate using 10 years of historical data.
 Built as a team of three, each owning a distinct part of the pipeline.
 
-> Full writeup → [ozyns.github.io](https://ozyns.github.io)
+> Full writeup → [ii0ns.github.io](https://ii0ns.github.io)
 
 ---
 
@@ -66,8 +66,8 @@ eurusd-forecasting/
 
 ```bash
 # clone
-git clone https://github.com/ozyns/EUR-USD-Forecasting-with-Random-Forest
-cd EUR-USD-Forecasting-with-Random-Forest
+git clone https://github.com/ii0ns/eurusd-ml-forecasting
+cd eurusd-ml-forecasting
 
 # install dependencies
 pip install -r requirements.txt
@@ -90,6 +90,4 @@ Outputs:
 This project is licensed under the MIT License.
 
 You are free to use, modify, and distribute it under the terms of the MIT License.
-=======
-# eurusd-ml-forecasting
-234c6551a8e68d3840c8da6cb4253f5e4843db96
+
