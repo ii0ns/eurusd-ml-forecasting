@@ -7,10 +7,7 @@ print("="*70)
 print("EUR/USD FORECASTING — RANDOM FOREST")
 print("="*70)
 
-engineer = EnhancedDataEngineer(
-    start_date=datetime.now() - timedelta(days=365*10),
-    end_date=datetime.now()
-)
+engineer = EnhancedDataEngineer(start_date="2015-01-01", end_date="2025-04-30")
 processed_data = engineer.process_all()
 
 developer = OptimizedModelDeveloper(processed_data)
@@ -18,12 +15,10 @@ developer.prepare_data()
 developer.train_model()
 results = developer.evaluate_model()
 developer.save_model()
+developer.export_results()
 
-evaluator = ModelEvaluator(
-    developer.model,
-    developer.X_test,
-    developer.y_test
-)
+evaluator = ModelEvaluator(developer.model, developer.X_test,
+                           developer.actual_price, developer.pred_price)
 evaluator.create_plots()
 
 print("\n" + "="*70)

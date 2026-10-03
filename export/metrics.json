@@ -1,0 +1,19 @@
+{
+  "r2": 0.9529,
+  "rmse": 0.004781,
+  "mae": 0.003523,
+  "mape": 0.326,
+  "directional_accuracy": 51.14,
+  "always_up_accuracy": 46.97,
+  "r2_returns": 0.006,
+  "baseline_r2": 0.9526,
+  "baseline_rmse": 0.004799,
+  "baseline_mae": 0.003529,
+  "train_samples": 2110,
+  "test_samples": 528,
+  "total_features": 27,
+  "model": "RandomForestRegressor",
+  "n_estimators": 200,
+  "max_depth": 15,
+  "generated_at": "2026-10-01 23:32"
+}

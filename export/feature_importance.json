@@ -1,0 +1,1 @@
+{"features": ["return_lag_5", "return_lag_1", "return_lag_2", "return_lag_14", "MA_cross_7_21", "MA_cross_21_50", "Gold_return", "return_lag_3", "Gold_return_7d", "Oil_return", "return_1d", "range_7d_pct"], "importances": [0.0535, 0.0515, 0.0495, 0.0491, 0.049, 0.0478, 0.0465, 0.045, 0.0444, 0.0422, 0.0413, 0.0406]}

@@ -5,11 +5,12 @@ from sklearn.metrics import r2_score
 
 class ModelEvaluator:
 
-    def __init__(self, model, X_test, y_test):
+    def __init__(self, model, X_test, actual, predicted):
         self.model = model
         self.X_test = X_test
-        self.y_test = y_test
-        self.predictions = model.predict(X_test)
+        self.actual = actual          # pd.Series, next-day close
+        self.predictions = predicted.values
+        self.y_test = actual          # so the plotting code below keeps working
 
     def create_plots(self):
         print("\nCreating visualizations...")
@@ -21,7 +22,7 @@ class ModelEvaluator:
         dates = self.y_test.index
         plt.plot(dates, self.y_test.values, label='Actual', linewidth=2, color='blue')
         plt.plot(dates, self.predictions, label='Predicted', linewidth=2, alpha=0.7, color='red')
-        plt.title('Actual vs Predicted EUR/USD', fontweight='bold', fontsize=13)
+        plt.title('Actual vs Predicted Next-Day EUR/USD', fontweight='bold', fontsize=13)
         plt.xlabel('Date')
         plt.ylabel('EUR/USD Rate')
         plt.legend()
